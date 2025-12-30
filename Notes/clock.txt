@@ -19,6 +19,10 @@ Types of clocks:
   HSE Oscillators clock -> RC Oscillator (Exterior  to microcontroller)
   Main PLL clock -> Phase Locked Loop (Internal to MCU)
 
+1. In modern MCUs,before using any peripherals,you must Enable its peripherals clock using peripherals CLOCK Registers
+2. By Default,most of all the the peripheral clocks are in sleep mode to save the power
+3. A peripherals wontn take or respond to your configuration values Until you enable its peripheral clock
+4. In Stm32 Pheipheral clocks are managed through RCC Registers
 
 
 
