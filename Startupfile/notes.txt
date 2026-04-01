@@ -1,0 +1,15 @@
+importance of Startup file:
+
+1.startup file is responsible for setting up the main user code to run
+2.code written in startup code runs before mnain().we can say startup file calls the main
+3.some part of the startup code is procesor dependent
+4.startup code takes care of the vector table placement in the code memort as required by the arm coreex processor
+5.start code also takes care of the stack reinitialisation
+6. startup code is responsible of .data,.bss section initialization in main memory
+
+startup file:
+
+1.create a vector table for your micro controller.vector tables rae MCU specific
+2.write a startup code which initializes .bss & .data section in SRAM
+3.call main()
+
